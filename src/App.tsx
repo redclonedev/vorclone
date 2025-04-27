@@ -1,5 +1,12 @@
+// src/App.tsx
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import './App.css'
+
+import Home from './components/Home'
+import Store from './components/Store'
+import Tools from './components/Tools'
+import OpenSource from './components/OpenSource'
+import Account from './components/Account'
 
 function App() {
   return (
@@ -32,27 +39,6 @@ function App() {
       </div>
     </Router>
   )
-}
-
-// Updated Placeholder Components
-function Home() {
-  return <div>Welcome to Vorclone - Cutting-edge software solutions.</div>
-}
-
-function Store() {
-  return <div>Explore our premium software products.</div>
-}
-
-function Tools() {
-  return <div>Access powerful free and premium tools developed by Vorclone.</div>
-}
-
-function OpenSource() {
-  return <div>Check out our open source projects and contribute.</div>
-}
-
-function Account() {
-  return <div>Manage your account: login, register, profile settings.</div>
 }
 
 export default App
