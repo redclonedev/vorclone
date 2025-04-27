@@ -13,7 +13,7 @@ function App() {
     <Router>
       <div className="app-container">
         <header className="header">
-          <h1>Vorclone</h1>
+          <h1>Vorclone Studio</h1>
           <nav className="nav">
             <Link to="/">Home</Link>
             <Link to="/store">Store</Link>
