@@ -1,4 +1,5 @@
 // src/components/Tools.tsx
+import { Helmet } from 'react-helmet';
 import { useState } from 'react'
 
 type Tool = {
@@ -40,6 +41,39 @@ const Tools = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Vorclone | Tools & OS</title>
+        </Helmet>
+
+      <h2>Open Source Projects</h2>
+      <br></br>
+      <p>
+        We believe in the power of collaboration—whether through open-source contributions or sharing tools with the community. Explore our GitHub repositories to see the software we're building to support developers and teams everywhere.
+      </p>
+      <p>
+        All of our open-source projects are hosted on our GitHub profile. Feel free to contribute, report issues, or simply explore!
+      </p>
+      <br></br>
+
+      <a href="https://github.com/vorclone" target="_blank" rel="noopener noreferrer">
+        <button>Visit GitHub Profile</button>
+      </a>
+
+      <br></br>
+      <br></br>
+
+      <h3>Check Out Our Popular Repositories:</h3>
+      <br></br>
+      <ul>
+        <li>
+          <a href="https://github.com/vorclone" target="_blank" rel="noopener noreferrer">
+            <button>Vorclone GitHub</button>
+          </a>
+        </li>
+      </ul>
+
+      <br></br>
+
       <h2>Our Tools</h2>
       <input
         type="text"
@@ -64,6 +98,8 @@ const Tools = () => {
           ))}
         </ul>
       )}
+
+      
     </div>
   )
 }

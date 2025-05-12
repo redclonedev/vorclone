@@ -1,4 +1,5 @@
 // src/components/Store.tsx
+import { Helmet } from 'react-helmet';
 import { useState } from 'react'
 
 type Product = {
@@ -24,7 +25,12 @@ const Store = () => {
 
   return (
     <div>
-      <h2>Explore Our Premium Software</h2>
+      <Helmet>
+        <title>Vorclone | Store</title>
+        </Helmet>
+
+      <h2>Explore Our Software</h2>
+      <br></br>
       <input
         type="text"
         placeholder="Search products..."
@@ -40,7 +46,9 @@ const Store = () => {
           {filtered.map(product => (
             <li key={product.id} style={{ marginBottom: '1.5rem', borderBottom: '1px solid #ccc', paddingBottom: '1rem' }}>
               <h3>{product.name}</h3>
+              <br></br>
               <p>{product.description}</p>
+              <br></br>
               <button onClick={() => alert(`Read more about ${product.name}`)}>Read More</button>
               <button onClick={() => alert(`Added ${product.name} to cart`)} style={{ marginLeft: '1rem' }}>Add to Cart</button>
             </li>

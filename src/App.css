@@ -8,6 +8,7 @@
 }
 
 body {
+  padding-top: 80px;
   background-color: #0d0d0d;
   color: #ffffff;
   font-family: 'Arial', sans-serif;
@@ -31,6 +32,12 @@ body {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensures it stays on top of other elements */
 }
 
 .header h1 {
